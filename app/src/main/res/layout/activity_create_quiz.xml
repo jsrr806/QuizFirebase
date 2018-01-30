@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dhirajdwivedi.quizfirebase.CreateQuiz"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Spinner
+            android:id="@+id/spinnerQuestionType"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+        <Spinner
+            android:id="@+id/spinnerMarks"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown">
+        </Spinner>
+
+
+    <!--<fragment
+        android:id="@+id/fragment"
+        android:name="com.dhirajdwivedi.quizfirebase.McqFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>-->
+            <EditText
+                android:id="@+id/editTextQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:hint="Enter Question Here..."
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editTextOption1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="Enter First Option..."
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editTextOption2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="Enter Second Option..."
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editTextOption3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="Enter Third Option..."
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editTextOption4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="Enter Fourth Option..."
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editTextAnswer"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:hint="Enter Answer..."
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/buttonNextQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next Question"
+                tools:ignore="HardcodedText" />
+            <Button
+                android:id="@+id/buttonSubmitQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Quiz"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
